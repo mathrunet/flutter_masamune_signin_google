@@ -9,6 +9,7 @@
 library masamune.signin.google;
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:masamune_firebase/masamune_firebase.dart';
 export 'package:masamune_flutter/masamune_flutter.dart';

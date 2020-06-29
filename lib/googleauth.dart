@@ -2,6 +2,17 @@ part of masamune.signin.google;
 
 /// Sign in to Firebase using Google OAuth.
 class GoogleAuth {
+  /// Gets the options for the provider.
+  static const AuthProviderOptions options = const AuthProviderOptions(
+      id: "google",
+      provider: _provider,
+      title: "Google SignIn",
+      text: "Sign in with your Google account.");
+  static Future<FirestoreAuth> _provider(
+      BuildContext context, Duration timeout) {
+    return signIn(timeout: timeout);
+  }
+
   /// Sign in to Firebase using Google OAuth.
   ///
   /// [protorol]: Protocol specification.
