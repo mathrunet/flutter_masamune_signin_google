@@ -27,7 +27,7 @@ class GoogleAuth {
             googleCurrentUser = await google.signInSilently().timeout(timeout);
           }
           if (googleCurrentUser == null) {
-            googleCurrentUser = await google.signIn().timeout(timeout);
+            googleCurrentUser = await google.signIn();
           }
           if (googleCurrentUser == null) {
             Log.error("Google user could not get.");

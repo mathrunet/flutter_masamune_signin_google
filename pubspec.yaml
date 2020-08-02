@@ -1,7 +1,7 @@
 name: masamune_signin_google
 description: >-
   Plugin for signing in with a Google account.
-version: 0.3.0
+version: 0.3.0+1
 homepage: https://mathru.net
 repository: https://github.com/mathrunet/flutter_masamune_signin_google
 
