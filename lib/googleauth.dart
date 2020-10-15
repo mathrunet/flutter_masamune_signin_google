@@ -35,12 +35,12 @@ class GoogleAuth {
           }
           GoogleSignInAuthentication googleAuth =
               await googleCurrentUser.authentication;
-          return GoogleAuthProvider.getCredential(
+          return GoogleAuthProvider.credential(
             accessToken: googleAuth.accessToken,
             idToken: googleAuth.idToken,
           );
         },
-        providerId: GoogleAuthProvider.providerId,
+        providerId: GoogleAuthProvider.PROVIDER_ID,
         protocol: protocol,
         timeout: timeout);
   }
